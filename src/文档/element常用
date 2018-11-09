@@ -1,0 +1,43 @@
+表格按钮操作
+<el-table-column  label="操作">
+          <template slot-scope="scope">
+            <el-button  size="mini"  @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+            <el-button size="mini" type="danger"  @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+          </template>
+</el-table-column>
+分页
+pageInfo: {
+          totalPages: 0,
+          totalRows: 0
+        },
+  <div class="block">
+        <el-pagination background @current-change="selectList" :current-page.sync="currentPage"
+                       layout="->, prev, pager, next" :page-count="pageInfo.totalPages">
+        </el-pagination>
+      </div>
+
+去除 前后空格  .replace(/(^\s*)|(\s*$)/g, "")
+
+去除所有空格:
+    str   =   str.replace(/\s+/g,"");
+去除两头空格:
+    str   =   str.replace(/^\s+|\s+$/g,"");
+去除左空格：
+    str=str.replace( /^\s*/, '');
+去除右空格：
+    str=str.replace(/(\s*$)/g, ""
+
+
+封装
+String.prototype.Trim = function()
+{
+    returnthis.replace(/(^\s*)|(\s*$)/g, "");
+}
+String.prototype.LTrim = function()
+{
+    returnthis.replace(/(^\s*)/g, "");
+}
+String.prototype.RTrim = function()
+{
+    returnthis.replace(/(\s*$)/g, "");
+}

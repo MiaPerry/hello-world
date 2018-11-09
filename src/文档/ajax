@@ -1,0 +1,12 @@
+
+this.axios.get(this.api.tocken.AccessToken)
+        .then((reponse) => {
+        console.log(response)
+//          this.$store.commit('login',reponse.data())
+        })
+
+this.axios.post(this.api.tocken.AccessToken)
+        .then((reponse) => {
+        console.log(response)
+//          this.$store.commit('login',reponse.data())
+        })

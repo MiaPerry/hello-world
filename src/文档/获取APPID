@@ -1,0 +1,2 @@
+this.$store.getters.getAppId   获取appId
+this.$store.commit('setAppId', appId);   存放appId

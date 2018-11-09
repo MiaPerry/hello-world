@@ -1,0 +1,27 @@
+<template>
+
+</template>
+
+<script>
+  import UserListVue from "./UserList.vue"
+  import UserAddVue from "./UserAdd.vue"
+
+  export default {
+    data() {
+      return {};
+    },
+    created() {
+
+    },
+    mounted() {
+
+    },
+    methods: {},
+    components: {},
+    watch: {}
+  };
+</script>
+<style lang="scss" scoped>
+
+
+</style>
